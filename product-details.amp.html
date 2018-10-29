@@ -51,7 +51,7 @@ limitations under the License.
     <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2 absolute top-0 pr0 mr2 mt2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="block"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
     </div>
       <a href="index.html" class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link mb1 md-mb0 ">
-        <amp-img src="/img/e-commerce/logo.png" width="96" height="27" layout="fixed" class="my0 mx-auto " alt=""></amp-img>
+        <amp-img src="img/e-commerce/logo.png" width="96" height="27" layout="fixed" class="my0 mx-auto " alt=""></amp-img>
       </a>
     <!--
       TODO: currently "fixeditems" is an array, therefore it's not possible to
@@ -88,7 +88,7 @@ limitations under the License.
     <ul class="list-reset m0 p0 ampstart-label">
         <li>
           <a href="index.html" class="text-decoration-none block 22">
-          <amp-img src="/img/e-commerce/logo-nav.png" width="279" height="175" layout="responsive" class="ampstart-sidebar-nav-image inline-block mb4" alt="Company logo" noloading="">
+          <amp-img src="img/e-commerce/logo-nav.png" width="279" height="175" layout="responsive" class="ampstart-sidebar-nav-image inline-block mb4" alt="Company logo" noloading="">
             <div placeholder="" class="commerce-loader"></div>
           </amp-img>
           </a>
@@ -136,7 +136,7 @@ limitations under the License.
   <h1 class="display-none   ">Your Basket</h1>
     <div class="commerce-cart-item flex flex-wrap items-center m0 p2 ">
       <div class="col-3 sm-col-2 md-col-2 lg-col-2">
-        <amp-img class="commerce-cart-item-image" src="..//img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
+        <amp-img class="commerce-cart-item-image" src="../img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
 <div placeholder="" class="commerce-loader"></div>        </amp-img>
       </div>
       <div class="commerce-cart-item-desc px1 col-6 sm-col-7 md-col-7 lg-col-7">
@@ -151,7 +151,7 @@ limitations under the License.
     </div>
     <div class="commerce-cart-item flex flex-wrap items-center m0 p2 ">
       <div class="col-3 sm-col-2 md-col-2 lg-col-2">
-        <amp-img class="commerce-cart-item-image" src="..//img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
+        <amp-img class="commerce-cart-item-image" src="../img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>        </amp-img>
       </div>
       <div class="commerce-cart-item-desc px1 col-6 sm-col-7 md-col-7 lg-col-7">
@@ -177,26 +177,26 @@ limitations under the License.
         "selectedColor": "black",
           "black": {
             "thumb": {
-              "image1": "/img/e-commerce/product/dark-small-1.jpg",
-              "image2": "/img/e-commerce/product/dark-small-2.jpg",
-              "image3": "/img/e-commerce/product/dark-small-3.jpg"
+              "image1": "img/e-commerce/product/dark-small-1.jpg",
+              "image2": "img/e-commerce/product/dark-small-2.jpg",
+              "image3": "img/e-commerce/product/dark-small-3.jpg"
             },
             "large": {
-              "image1": "/img/e-commerce/product/dark-large-1.jpg",
-              "image2": "/img/e-commerce/product/dark-large-2.jpg",
-              "image3": "/img/e-commerce/product/dark-large-3.jpg"
+              "image1": "img/e-commerce/product/dark-large-1.jpg",
+              "image2": "img/e-commerce/product/dark-large-2.jpg",
+              "image3": "img/e-commerce/product/dark-large-3.jpg"
             }
           },
           "blue": {
             "thumb": {
-              "image1": "/img/e-commerce/product/light-small-1.jpg",
-              "image2": "/img/e-commerce/product/light-small-2.jpg",
-              "image3": "/img/e-commerce/product/light-small-3.jpg"
+              "image1": "img/e-commerce/product/light-small-1.jpg",
+              "image2": "img/e-commerce/product/light-small-2.jpg",
+              "image3": "img/e-commerce/product/light-small-3.jpg"
             },
             "large": {
-              "image1": "/img/e-commerce/product/light-large-1.jpg",
-              "image2": "/img/e-commerce/product/light-large-2.jpg",
-              "image3": "/img/e-commerce/product/light-large-3.jpg"
+              "image1": "img/e-commerce/product/light-large-1.jpg",
+              "image2": "img/e-commerce/product/light-large-2.jpg",
+              "image3": "img/e-commerce/product/light-large-3.jpg"
             }
           },
         "selectedSlide": 0
@@ -207,24 +207,24 @@ limitations under the License.
     <section class="flex flex-wrap pb4 md-pb7">
       <div class="col-12 md-col-6 px2 pt2 md-pl7 md-pt4">
         <amp-carousel width="1280" height="720" layout="responsive" type="slides" [slide]="product.selectedSlide" on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
-          <amp-img [src]="product[product.selectedColor].large.image1" src="/img/e-commerce/product/dark-large-1.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image1" src="img/e-commerce/product/dark-large-1.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
-          <amp-img [src]="product[product.selectedColor].large.image2" src="/img/e-commerce/product/dark-large-2.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image2" src="img/e-commerce/product/dark-large-2.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
-          <amp-img [src]="product[product.selectedColor].large.image3" src="/img/e-commerce/product/dark-large-3.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image3" src="img/e-commerce/product/dark-large-3.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
         </amp-carousel>
 
         <amp-selector class="center" [selected]="product.selectedSlide" on="select:AMP.setState({product: {selectedSlide: event.targetOption}})">
           <ul class="list-reset inline-block">
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="0" layout="responsive" selected="selected" [src]="product[product.selectedColor].thumb.image1" src="/img/e-commerce/product/dark-small-1.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="0" layout="responsive" selected="selected" [src]="product[product.selectedColor].thumb.image1" src="img/e-commerce/product/dark-small-1.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="1" layout="responsive" [src]="product[product.selectedColor].thumb.image2" src="/img/e-commerce/product/dark-small-2.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="1" layout="responsive" [src]="product[product.selectedColor].thumb.image2" src="img/e-commerce/product/dark-small-2.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="2" layout="responsive" [src]="product[product.selectedColor].thumb.image3" src="/img/e-commerce/product/dark-small-3.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="2" layout="responsive" [src]="product[product.selectedColor].thumb.image3" src="img/e-commerce/product/dark-small-3.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
           </ul>
         </amp-selector>
@@ -399,70 +399,70 @@ limitations under the License.
       <ul class="list-reset">
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Sprocket Set</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-2.jpg" width="1" height="1" layout="responsive" alt="Fixie Blue" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-2.jpg" width="1" height="1" layout="responsive" alt="Fixie Blue" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Fixie Blue</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-3.jpg" width="1" height="1" layout="responsive" alt="Chain set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-3.jpg" width="1" height="1" layout="responsive" alt="Chain set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Chain set</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-4.jpg" width="1" height="1" layout="responsive" alt="Leather Saddle" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-4.jpg" width="1" height="1" layout="responsive" alt="Leather Saddle" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Leather Saddle</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-5.jpg" width="1" height="1" layout="responsive" alt="16-Speed" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-5.jpg" width="1" height="1" layout="responsive" alt="16-Speed" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">16-Speed</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-6.jpg" width="1" height="1" layout="responsive" alt="Red Cruiser" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-6.jpg" width="1" height="1" layout="responsive" alt="Red Cruiser" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Red Cruiser</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-7.jpg" width="1" height="1" layout="responsive" alt="Horn Handles" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-7.jpg" width="1" height="1" layout="responsive" alt="Horn Handles" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Horn Handles</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Caliper Brakes</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-9.jpg" width="1" height="1" layout="responsive" alt="Road Bike" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-9.jpg" width="1" height="1" layout="responsive" alt="Road Bike" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Road Bike</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-10.jpg" width="1" height="1" layout="responsive" alt="Wheel Set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-10.jpg" width="1" height="1" layout="responsive" alt="Wheel Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Wheel Set</h2>
             </a>
